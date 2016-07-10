@@ -3,7 +3,9 @@ Cherry Plugin
 
 Cherry Plugin contains all shortcodes and widgets used in Cherry Framework. Also Cherry Framework Import/Export features are also added by Cherry plugin.
 
-### V2.0.1 ##
+#### v2.1 ####
+
+#### v2.0 ####
 
 Initial DD Version
 
