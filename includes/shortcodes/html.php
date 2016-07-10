@@ -227,15 +227,49 @@ if (!function_exists('row_fluid_shortcode')) {
 			'custom_class'  => ''
 		), $atts));
 		// add divs to the content
-		$output = '<div class="row-fluid '.$custom_class.'">';
+		$output .= '<div class=" row '.$custom_class.'">';
 		$output .= do_shortcode($content);
-		$output .= '</div> <!-- .row-fluid (end) -->';
+		$output .= '</div> <!-- .row (end) -->';
 
 		$output = apply_filters( 'cherry_plugin_shortcode_output', $output, $atts, $shortcodename );
 
 		return $output;
 	}
 	add_shortcode('row_fluid', 'row_fluid_shortcode');
+}
+// Container Fluid
+if (!function_exists('container_fluid_shortcode')) {
+	function container_fluid_shortcode( $atts, $content = null, $shortcodename = '' ) {
+		extract(shortcode_atts(array(
+			'custom_class'  => ''
+		), $atts));
+		// add divs to the content
+		$output .= '<div class=" container-fluid '.$custom_class.'">';
+		$output .= do_shortcode($content);
+		$output .= '</div> <!-- .container-fluid (end) -->';
+
+		$output = apply_filters( 'cherry_plugin_shortcode_output', $output, $atts, $shortcodename );
+
+		return $output;
+	}
+	add_shortcode('container_fluid', 'container_fluid_shortcode');
+}
+// Container 
+if (!function_exists('container_shortcode')) {
+	function container_shortcode( $atts, $content = null, $shortcodename = '' ) {
+		extract(shortcode_atts(array(
+			'custom_class'  => ''
+		), $atts));
+		// add divs to the content
+		$output .= '<div class=" container '.$custom_class.'">';
+		$output .= do_shortcode($content);
+		$output .= '</div> <!-- .container (end) -->';
+
+		$output = apply_filters( 'cherry_plugin_shortcode_output', $output, $atts, $shortcodename );
+
+		return $output;
+	}
+	add_shortcode('container', 'container_shortcode');
 }
 // Clear
 if (!function_exists('clear_shortcode')) {
