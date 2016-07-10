@@ -3,6 +3,10 @@ Cherry Plugin
 
 Cherry Plugin contains all shortcodes and widgets used in Cherry Framework. Also Cherry Framework Import/Export features are also added by Cherry plugin.
 
+### V2.0.1 ##
+
+Initial DD Version
+
 #### v1.2.8.2 ####
 
 * FIX: `[google_map_ap]` shortcode
