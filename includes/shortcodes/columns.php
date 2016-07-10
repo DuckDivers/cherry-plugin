@@ -3,7 +3,7 @@
 function cherry_grid_column( $atts, $content = null, $shortcodename = '' ) {
 	//remove wrong nested <p>
 	$content = remove_invalid_tags( $content, array('p') );
-
+	$shortcodename = str_replace("span","col-sm-", $shortcodename);
 	extract(shortcode_atts(array(
 		'custom_class'  => ''
 	), $atts));
@@ -35,7 +35,7 @@ function one_half_column($atts, $content = null) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span6">';
+	$return = '<div class="col-sm-6">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -49,7 +49,7 @@ function one_third_column( $atts, $content = null ) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span4">';
+	$return = '<div class="col-sm-4">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -63,7 +63,7 @@ function two_third_column( $atts, $content = null ) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span8">';
+	$return = '<div class="col-sm-8">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -77,7 +77,7 @@ function one_fourth_column( $atts, $content = null ) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span3">';
+	$return = '<div class="col-sm-3">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -91,7 +91,7 @@ function three_fourth_column( $atts, $content = null) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span9">';
+	$return = '<div class="col-sm-9">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -105,7 +105,7 @@ function one_sixth_column( $atts, $content = null ) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span2">';
+	$return = '<div class="col-sm-2">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
@@ -119,7 +119,7 @@ function five_sixth_column( $atts, $content = null ) {
 	$content = remove_invalid_tags( $content, array('p') );
 
 	// add divs to the content
-	$return = '<div class="span10">';
+	$return = '<div class="col-sm-10">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
