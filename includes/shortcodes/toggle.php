@@ -22,17 +22,19 @@ if (!function_exists('my_display_shortcode_accordion')) {
 		if($visible!='') {
 			$inClass = "in";
 			$activeClass = "active";
+			$collapsed = "";
 		} else {
 			$inClass = "";
 			$activeClass = "";
+			$collapsed = "collapsed";
 		}
 
-		$output = '<div class="accordion-group">';
-			$output .= '<div class="accordion-heading">';
-				$output .= '<a class="accordion-toggle '.$activeClass.'" data-toggle="collapse" data-parent="#id-'.$my_global_var.'" href="#'.$toggleid.'">'.$title.'</a>';
+		$output = '<div class="panel panel-default">';
+			$output .= '<div class="panel-heading '.$activeClass.'" id="heading-'.$toggleid.'" data-target="#collapse-'.$toggleid.'" data-parent="#accordion" data-toggle="collapse">';
+			$output .= '<h4 class="panel-title"><a class="accordion-toggle"  href="#collapse-'.$toggleid.'">'.$title.'</a></h4>';
 			$output .= '</div>';
-			$output .= '<div class="accordion-body collapse '.$inClass.'" id="'.$toggleid.'">';
-				$output .= '<div class="accordion-inner">';
+			$output .= '<div id="collapse-'.$toggleid.'" class="panel-collapse collapse '.$inClass.'" aria-labelledby="heading-'.$toggleid.'">';
+				$output .= ' <div class="panel-body">';
 					$output .= do_shortcode( $content );
 				$output .= '</div>';
 			$output .= '</div>';
@@ -51,8 +53,8 @@ if (!function_exists('my_display_shortcode_accordions')) {
 		// wordpress function
 		global $my_accordion_shortcode_count,$post,$my_global_var;
 
-		$output = '<div id="id-'.$my_global_var.'" class="accordion">';
-			$output .= do_shortcode( $content );
+		$output = '<div class="panel-group" id="accordion">';
+		$output .= do_shortcode( $content );
 		$output .= '</div>';
 
 		$my_global_var++;
