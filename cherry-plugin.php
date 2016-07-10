@@ -9,6 +9,8 @@
 	Text Domain: cherry-plugin
 	Domain Path: languages/
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	GitHub Plugin URI: https://github.com/DuckDivers/cherry-plugin
+	GitHub Branch:     master	
 */
 //plugin settings
 	if(!function_exists('cherry_plugin_settings')){
