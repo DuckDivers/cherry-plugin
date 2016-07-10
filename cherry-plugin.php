@@ -1,10 +1,10 @@
 <?php
 /*
-	Plugin Name: Cherry Plugin
+	Plugin Name: Cherry Plugin - DD Fork
 	Version: 2.0
 	Plugin URI: http://www.cherryframework.com/update/meet-the-cherry-plugin-bare-functionalities-no-strings-attached/
-	Description: Cherry team has already created a Cherry framework that can be reasonably called perfect, but we are always looking for more improvements. Meet the Cherry Plugin. This is an extension for our Cherry framework where we've included all shortcodes and widgets you will ever need. The plugin is fully compatible with any WordPress theme powered by Cherry Framework. So far the plugin is a beta release, but we're going to keep on improving it, to deliver even more cool features.
-	Author: Cherry Team.
+	Description: Cherry Plugin fpr Bootstrap 3.x plugged in. BS, DIV Shortcode adds divs to editor window.
+	Author: Cherry Team - DD Forked
 	Author URI: http://www.cherryframework.com/
 	Text Domain: cherry-plugin
 	Domain Path: languages/
@@ -31,17 +31,12 @@
 			define('CHERRY_PLUGIN_NAME', $plugin_data['Name']);
 			define('CHERRY_PLUGIN_SLUG', plugin_basename( __FILE__ ));
 			define('CHERRY_PLUGIN_DB', $wpdb->prefix.CHERRY_PLUGIN_DOMAIN);
-			define('CHERRY_PLUGIN_REMOTE_SERVER', esc_url( 'http://tmbhtest.com/cherryframework.com/components_update/' ));
 
 			//Other constant variables
 			define('CURRENT_THEME_DIR', get_stylesheet_directory());
 			define('CURRENT_THEME_URI', get_stylesheet_directory_uri());
 			define('UPLOAD_BASE_DIR', str_replace("\\", "/", $upload_dir['basedir']));
 			define('UPLOAD_DIR', str_replace("\\", "/", $upload_dir['path'].'/'));
-
-			// if ( !defined('API_URL') ) {
-			// 	define( 'API_URL', esc_url( 'http://updates.cherry.template-help.com/cherrymoto/v3/api/' ) );
-			// }
 
 			load_plugin_textdomain( CHERRY_PLUGIN_DOMAIN, false, dirname( plugin_basename( __FILE__ ) ) . '/'.CHERRY_PLUGIN_DOMAIN_DIR);
 
