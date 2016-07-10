@@ -28,25 +28,6 @@ if (!function_exists('posts_grid_shortcode')) {
 		$spans = $columns;
 		$rand  = rand();
 
-		// columns
-		switch ($spans) {
-			case '1':
-				$spans = 'span12';
-				break;
-			case '2':
-				$spans = 'span6';
-				break;
-			case '3':
-				$spans = 'span4';
-				break;
-			case '4':
-				$spans = 'span3';
-				break;
-			case '6':
-				$spans = 'span2';
-				break;
-		}
-
 		// check what order by method user selected
 		switch ($order_by) {
 			case 'date':
@@ -153,7 +134,7 @@ if (!function_exists('posts_grid_shortcode')) {
 					$output .= '<ul class="posts-grid row-fluid unstyled '. $custom_class .' ul-item-'.$countul.'">';
 				}
 
-				$output .= '<li class="'. $spans .' list-item-'.$count.'">';
+				$output .= '<li class="'. $spans .'-columns list-item-'.$count.'">';
 
 					if($lightbox == 'yes') {
 						if(has_post_thumbnail($post_id) && $mediaType == 'Image') {
