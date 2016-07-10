@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: Cherry Plugin - DD Fork
-	Version: 2.0
+	Version: 2.0.1
 	Plugin URI: http://www.cherryframework.com/update/meet-the-cherry-plugin-bare-functionalities-no-strings-attached/
 	Description: Cherry Plugin fpr Bootstrap 3.x plugged in. BS, DIV Shortcode adds divs to editor window.
 	Author: Cherry Team - DD Forked
