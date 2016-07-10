@@ -1,7 +1,7 @@
 <?php
 /*
-	Plugin Name: Cherry Plugin - DD Fork
-	Version: 2.0.1
+	Plugin Name: Cherry Plugin - Duck Version
+	Version: 2.1
 	Plugin URI: http://www.cherryframework.com/update/meet-the-cherry-plugin-bare-functionalities-no-strings-attached/
 	Description: Cherry Plugin fpr Bootstrap 3.x plugged in. BS, DIV Shortcode adds divs to editor window.
 	Author: Cherry Team - DD Forked
@@ -9,7 +9,7 @@
 	Text Domain: cherry-plugin
 	Domain Path: languages/
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
-	GitHub Plugin URI: https://github.com/DuckDivers/cherry-plugin
+	GitHub Plugin URI: https://github.com/DuckDivers/duck-cherry-plugin
 	GitHub Branch:     master	
 */
 //plugin settings
