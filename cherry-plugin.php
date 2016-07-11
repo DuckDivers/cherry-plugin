@@ -31,6 +31,8 @@
 			define('CHERRY_PLUGIN_NAME', $plugin_data['Name']);
 			define('CHERRY_PLUGIN_SLUG', plugin_basename( __FILE__ ));
 			define('CHERRY_PLUGIN_DB', $wpdb->prefix.CHERRY_PLUGIN_DOMAIN);
+			define('CHERRY_PLUGIN_REMOTE_SERVER', esc_url( 'https://github.com/DuckDivers/duck-cherry-plugin' ));
+
 
 			//Other constant variables
 			define('CURRENT_THEME_DIR', get_stylesheet_directory());
