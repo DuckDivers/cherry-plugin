@@ -16,9 +16,6 @@
 	//Shortcodes tinyMCE includes
 	include_once (CHERRY_PLUGIN_DIR . 'admin/shortcodes/tinymce-shortcodes.php');
 
-	//Plugin updater
-	include_once (CHERRY_PLUGIN_DIR . 'admin/plugin-updater.php');
-
 //added menu item
 	if(!function_exists('cherry_plugin_menu')){
 		function cherry_plugin_menu() {
