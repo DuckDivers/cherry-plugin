@@ -1,7 +1,7 @@
 <?php
 /*
 	Plugin Name: Cherry Plugin - Duck Version
-	Version: 2.1.1
+	Version: 2.1.1.1
 	Plugin URI: http://www.cherryframework.com/update/meet-the-cherry-plugin-bare-functionalities-no-strings-attached/
 	Description: Cherry Plugin fpr Bootstrap 3.x plugged in. BS, DIV Shortcode adds divs to editor window.
 	Author: Cherry Team + Duck Diver
