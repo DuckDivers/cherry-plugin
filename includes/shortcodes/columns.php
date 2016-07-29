@@ -27,6 +27,21 @@ add_shortcode( 'span10', 'cherry_grid_column' );
 add_shortcode( 'span11', 'cherry_grid_column' );
 add_shortcode( 'span12', 'cherry_grid_column' );
 
+function cherry_container_shortcode($atts, $content = null, $shortcodename = ''){
+	$a = shortcode_atts(array(
+			'custom_class' => ''
+		),$atts);
+	$content = remove_invalid_tags( $content, array('p') );
+
+	$return = '<div class="' . $shortcodename . ' ' . $custom_class . '">';
+	$return .= do_shortcode( $content );
+	$return .= '</div>';
+
+	return $return;
+}
+add_shortcode( 'container', 'cherry_container_shortcode');
+add_shortcode( 'container-fluid', 'cherry_container_shortcode');
+
 
 // Fluid Columns
 // one_half

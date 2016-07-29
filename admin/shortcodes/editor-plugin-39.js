@@ -93,6 +93,8 @@
 				]},
 				// Columns menu.
 				{text: 'Columns', menu: [
+					{text: 'container', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container', { title: 'container' } ); } },
+					{text: 'container-fluid', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'container-fluid', { title: 'container-fluid' } ); } },
 					{text: 'row', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'row', { title: 'row' } ); } },
 					{text: 'row inner', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'row_in', { title: 'row inner' } ); } },
 					{text: 'span1', onclick: function() { editor.execCommand( 'cherry_insert_immediate', false, 'span1', { title: 'span1' } ); } },

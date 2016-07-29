@@ -837,6 +837,8 @@
 										a.addWithDialog(c,"Categories","categories");
 										a.addWithDialog(c,"Tags","tags");
 								c=b.addMenu({title:"Columns"});
+										a.addWithDialog(c,"container","container");
+										a.addWithDialog(c,"container-fluid","container-fluid");
 										a.addWithDialog(c,"row","row");
 										a.addWithDialog(c,"row inner","row_in");
 										a.addWithDialog(c,"span1","span1");
