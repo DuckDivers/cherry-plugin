@@ -33,7 +33,7 @@ function cherry_container_shortcode($atts, $content = null, $shortcodename = '')
 		),$atts);
 	$content = remove_invalid_tags( $content, array('p') );
 
-	$return = '<div class="' . $shortcodename . ' ' . $custom_class . '">';
+	$return = '<div class="' . $shortcodename . ' ' . $a['custom_class'] . '">';
 	$return .= do_shortcode( $content );
 	$return .= '</div>';
 
