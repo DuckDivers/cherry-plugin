@@ -37,7 +37,7 @@
 				<div class="col">
 					<div class="plugin-option">
 						<div class="thumb-icon">
-							<i class="icon-puzzle-piece"></i>
+							<i class="fa fa-puzzle-piece"></i>
 						</div>
 						<h4><a href="widgets.php"><?php _e('Widgets', CHERRY_PLUGIN_DOMAIN); ?></a></h4>
 						<p><small><?php _e('Cherry Widgets offer additional ways to place content to widget areas. Several available widget will allow you to add more functionality to your website.', CHERRY_PLUGIN_DOMAIN); ?></small></p>

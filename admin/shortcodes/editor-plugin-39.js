@@ -66,7 +66,7 @@
 		// Add a button that opens a window
 		editor.addButton( 'cherry_shortcodes_button', {
 			type: 'menubutton',
-			icon: 'icon icon-puzzle-piece',
+			icon: 'fa fa-puzzle-piece',
 			tooltip: 'Insert a Cherry Shortcode',
 			menu: [
 				// Posts menu.

@@ -435,3 +435,8 @@ form#upload_files.hover{
 }
 
 .demo_gif{max-width: 100%;}
+i.mce-ico.mce-i-fa.fa-puzzle-piece:before {
+    content: '\f12e';
+    font-family: fontawesome;
+    font-size: 20px;
+}
