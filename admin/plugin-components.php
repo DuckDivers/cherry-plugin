@@ -19,7 +19,7 @@ class cherry_plugin_components {
 				$locals = '';
 				break;
 		}
-		$get_remote_info = cherry_plugin_remote_query(array('data_type' => 'info'));
+//		$get_remote_info = cherry_plugin_remote_query(array('data_type' => 'info'));
 		$support_link = $get_remote_info['support_url'.$locals];
 		$doc_link = $get_remote_info['document_url'];
 

@@ -15,7 +15,7 @@
 //help popaps
 	//help_import
 	function cherry_plugin_help_import_popup(){
-		$video_src = cherry_plugin_remote_query(array('data_type' => 'info'));
+//		$video_src = cherry_plugin_remote_query(array('data_type' => 'info'));
 		$video_src = $video_src['video_help_import'];
 
 		$out =  '<div id="help_import" style="display:none; text-align:center;">';
@@ -29,7 +29,7 @@
 	}
 	//help_export
 	function cherry_plugin_help_export_popup(){
-		$video_src = cherry_plugin_remote_query(array('data_type' => 'info'));
+//		$video_src = cherry_plugin_remote_query(array('data_type' => 'info'));
 		$video_src = $video_src['video_help_export'];
 
 		$out =  '<div id="help_export" style="display:none;">';
