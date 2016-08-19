@@ -10,6 +10,7 @@
 	if(!function_exists('cherry_include_admin_style')){
 		function cherry_include_admin_style(){
 			wp_enqueue_style('cherry_plugin_stylesheet', CHERRY_PLUGIN_URL.'admin/css/cherry-admin-plugin.css', false, '0.1', 'all');
+			wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', false, '4.6.3', 'all');
 		}
 		add_action( 'admin_enqueue_scripts', 'cherry_include_admin_style' );
 	}
