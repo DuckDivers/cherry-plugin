@@ -3,6 +3,10 @@ Cherry Plugin
 
 Cherry Plugin contains all shortcodes and widgets used in Cherry Framework. Also Cherry Framework Import/Export features are also added by Cherry plugin.
 
+### V2.3.1### 
+
+Includes several tweaks to work with Bootstrap 3.x  Updated FontAwesome and added "DIV" shortcode
+
 #### v2.1 ####
 
 #### v2.0 ####
