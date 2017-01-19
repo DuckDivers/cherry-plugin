@@ -33,3 +33,4 @@
 	include_once (CHERRY_PLUGIN_DIR . 'includes/shortcodes/categories.php');
 	include_once (CHERRY_PLUGIN_DIR . 'includes/shortcodes/media.php');
 	include_once (CHERRY_PLUGIN_DIR . 'includes/shortcodes/pricing-tables.php');
+	include_once (CHERRY_PLUGIN_DIR . 'includes/shortcodes/true-toggle.php');
