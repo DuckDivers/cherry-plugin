@@ -44,7 +44,7 @@ if (!function_exists('my_display_shortcode_toggle')) {
 
 		return $output;
 	}
-	add_shortcode('accordion', 'my_display_shortcode_toggle'); // Single accordion
+	add_shortcode('toggle', 'my_display_shortcode_toggle'); // Single accordion
 }
 if (!function_exists('my_display_shortcode_toggles')) {
 	function my_display_shortcode_toggles( $atts, $content = null, $shortcodename = '' ){
@@ -62,6 +62,6 @@ if (!function_exists('my_display_shortcode_toggles')) {
 
 		return $output;
 	}
-	add_shortcode('accordions', 'my_display_shortcode_toggles'); // Accordion Wrapper
+	add_shortcode('toggles', 'my_display_shortcode_toggles'); // Accordion Wrapper
 }
 ?>
