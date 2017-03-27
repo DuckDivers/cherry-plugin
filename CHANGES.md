@@ -1,6 +1,9 @@
 #Cherry Plugin#
 ##Change log##
 
+### v2.1.4 ###
+* Update toggles to include href for issue with iOS
+
 #### v2.1 ###
 
 #### v2.0.1 ###
