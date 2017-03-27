@@ -31,7 +31,7 @@ if (!function_exists('my_display_shortcode_accordion')) {
 
 		$output = '<div class="panel panel-default">';
 			$output .= '<div class="panel-heading '.$activeClass.'" id="heading-'.$toggleid.'" data-target="#collapse-'.$toggleid.'" data-parent="#accordion" data-toggle="collapse">';
-			$output .= '<h4 class="panel-title"><a class="accordion-toggle"  data-target="#collapse-'.$toggleid.'">'.$title.'</a></h4>';
+			$output .= '<h4 class="panel-title"><a href="#collapse-'.$toggleid.'" class="accordion-toggle"  data-target="#collapse-'.$toggleid.'">'.$title.'</a></h4>';
 			$output .= '</div>';
 			$output .= '<div id="collapse-'.$toggleid.'" class="panel-collapse collapse '.$inClass.'" aria-labelledby="heading-'.$toggleid.'">';
 				$output .= ' <div class="panel-body">';
