@@ -441,3 +441,7 @@ i.mce-ico.mce-i-fa.fa-puzzle-piece:before, i.mce-ico.mce-i-icon.icon-puzzle-piec
     font-family: fontawesome;
     font-size: 20px;
 }
+li#toplevel_page_options-framework img {
+    position: relative;
+    top: -4px;
+}
