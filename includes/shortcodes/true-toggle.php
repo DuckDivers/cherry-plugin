@@ -29,7 +29,7 @@ if (!function_exists('my_display_shortcode_toggle')) {
 
 		$output = '<div class="accordion-group">';
 			$output .= '<div class="accordion-heading">';
-				$output .= '<a href="#collapse-'.$toggleid.'" class="accordion-toggle '.$activeClass.'" data-toggle="collapse" data-parent="#id-'.$my_global_var.'" href="#'.$toggleid.'">'.$title.'</a>';
+				$output .= '<a  class="accordion-toggle '.$activeClass.'" data-toggle="collapse" data-parent="#id-'.$my_global_var.'" href="#'.$toggleid.'">'.$title.'</a>';
 			$output .= '</div>';
 			$output .= '<div class="accordion-body collapse '.$inClass.'" id="'.$toggleid.'">';
 				$output .= '<div class="accordion-inner">';
