@@ -25,7 +25,7 @@
 			$capability         = 'activate_plugins';
 			$main_page_link     = 'plugin-main-page';
 
-			$plugin_menu_title             = __( 'Cherry plugin', CHERRY_PLUGIN_DOMAIN );
+			$plugin_menu_title             = __( 'DuckDiver Plugin', CHERRY_PLUGIN_DOMAIN );
 			$main_page_menu_title          = __( 'Summary', CHERRY_PLUGIN_DOMAIN );
 			$under_construction_menu_title = __( 'Maintenance Mode', CHERRY_PLUGIN_DOMAIN );
 			$import_menu_title             = __( 'Import Content', CHERRY_PLUGIN_DOMAIN );
