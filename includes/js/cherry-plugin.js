@@ -18,6 +18,11 @@ jQuery(document).ready(function(){
 		jQuery('.content_box.full-width').css({'padding-left': half_width_of_viewport+'px', 'padding-right': half_width_of_viewport+'px', 'margin-left': '-'+half_width_of_viewport+'px'});
 		jQuery('.full-block-wrap').width(width_of_container);
 	}
+	
+	// Make Google Map Function after Click on it.
+	jQuery('.google-map').click(function(){
+		jQuery('.google-map iframe').css('pointer-events', 'inherit');
+		});
 });
 
 function cherryPluginCarouselInit() {
