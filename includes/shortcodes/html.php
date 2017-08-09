@@ -227,7 +227,7 @@ if (!function_exists('row_fluid_shortcode')) {
 			'custom_class'  => ''
 		), $atts));
 		// add divs to the content
-		$output .= '<div class=" row '.$custom_class.'">';
+		$output = '<div class=" row '.$custom_class.'">';
 		$output .= do_shortcode($content);
 		$output .= '</div> <!-- .row (end) -->';
 
