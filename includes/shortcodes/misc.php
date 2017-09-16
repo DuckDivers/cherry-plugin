@@ -25,10 +25,15 @@ if (!function_exists('shortcode_well')) {
 	function shortcode_well( $atts, $content = null, $shortcodename = '' ) {
 		extract(shortcode_atts(
 				array(
-					'size' => 'normal'
+					'size' => 'normal',
+					'custom_class' => ''
 				), $atts));
 
-		$output = '<div class="well '.$size.'">';
+		$output = '<div class="well '.$size ;
+		if ($custom_class){
+			$output .= ' '.$custom_class;
+		}
+		$output .='">';
 		$output .= do_shortcode($content);
 		$output .= '</div>';
 
