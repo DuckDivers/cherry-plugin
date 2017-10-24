@@ -5,7 +5,6 @@
  */
 global $my_accordion_shortcode_count;
 $my_accordion_shortcode_count = 0;
-
 global $my_global_var;
 $my_global_var = rand();
 if (!function_exists('my_display_shortcode_accordion')) {
@@ -16,7 +15,7 @@ if (!function_exists('my_display_shortcode_accordion')) {
 			'class' => null,
 			'visible' => null
 		), $atts));
-
+		
 		$toggleid = rand();
 
 		if($visible!='') {
@@ -30,7 +29,7 @@ if (!function_exists('my_display_shortcode_accordion')) {
 		}
 
 		$output = '<div class="panel panel-default">';
-			$output .= '<div class="panel-heading '.$activeClass.'" id="heading-'.$toggleid.'" data-target="#collapse-'.$toggleid.'" data-parent="#accordion" data-toggle="collapse">';
+			$output .= '<div class="panel-heading '.$activeClass.'" id="heading-'.$toggleid.'" data-target="#collapse-'.$toggleid.'" data-parent="#accordion-'.$my_global_var.'" data-toggle="collapse">';
 			$output .= '<h4 class="panel-title"><a class="accordion-toggle"  data-target="#collapse-'.$toggleid.'">'.$title.'</a></h4>';
 			$output .= '</div>';
 			$output .= '<div id="collapse-'.$toggleid.'" class="panel-collapse collapse '.$inClass.'" aria-labelledby="heading-'.$toggleid.'">';
@@ -53,7 +52,7 @@ if (!function_exists('my_display_shortcode_accordions')) {
 		// wordpress function
 		global $my_accordion_shortcode_count,$post,$my_global_var;
 
-		$output = '<div class="panel-group" id="accordion">';
+		$output = '<div class="panel-group" id="accordion-'.$my_global_var.'">';
 		$output .= do_shortcode( $content );
 		$output .= '</div>';
 
