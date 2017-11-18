@@ -1280,6 +1280,12 @@ width: 100% !important;
 .social {
   margin: 0;
 }
+ul.social {
+	list-style: none;
+	float: left;
+	font-size: 20px;
+	padding-left: 0;
+}
 .social_link {
   -webkit-transition: 0.25s;
   -moz-transition: 0.25s;
