@@ -7,7 +7,6 @@ function cherry_load_widgets() {
 	$widget_files = array(
 		'MY_PostWidget'                 => 'my-recent-posts.php',
 		'MY_CommentWidget'              => 'my-comment-widget.php',
-		'My_SocialNetworksWidget'       => 'my-social-widget.php',
 		'MY_PostsTypeWidget'            => 'my-posts-type-widget.php',
 		'MY_FlickrWidget'               => 'my-flickr-widget.php',
 		'Ad_125_125_Widget'             => 'my-banners-widget.php',
