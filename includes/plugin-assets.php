@@ -3,10 +3,10 @@
 	include_once (CHERRY_PLUGIN_DIR . 'includes/widgets/register-widgets.php');
 
 	// Exclude widget manager for customizer
-	global $wp_customize;
-	if ( !isset( $wp_customize ) ) {
-		include_once (CHERRY_PLUGIN_DIR . 'includes/widgets/widgets-manager.php');
-	}
+	//global $wp_customize;
+	//if ( !isset( $wp_customize ) ) {
+	//	include_once (CHERRY_PLUGIN_DIR . 'includes/widgets/widgets-manager.php');
+	//}
 
 //-----------------------------------------------------------------------------
 // Maintenance Mode

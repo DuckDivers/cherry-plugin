@@ -463,8 +463,8 @@ function cherry_widget_control() {
 			<label for="' . $themename . '_widget_rules_'.$id.'">'.__('Visible at', CHERRY_PLUGIN_DOMAIN).': </label>
 			<select name="' . $themename . '_widget_rules_type_'.$id.'" id="' . $themename . '_widget_rules_type_'.$id.'" class="widefat gk_widget_rules_select">
 				<option value="all"'.(($value_type != "include" && $value_type != 'exclude') ? " selected=\"selected\"":"").'>'.__('All pages', CHERRY_PLUGIN_DOMAIN).'</option>
-				<option value="exclude"'.(($value_type == "exclude") ? " selected=\"selected\"":"").'>'.__('All pages expecting', CHERRY_PLUGIN_DOMAIN).':</option>
-				<option value="include"'.(($value_type == "include") ? " selected=\"selected\"":"").'>'.__('No pages expecting', CHERRY_PLUGIN_DOMAIN).':</option>
+				<option value="exclude"'.(($value_type == "exclude") ? " selected=\"selected\"":"").'>'.__('All pages except', CHERRY_PLUGIN_DOMAIN).':</option>
+				<option value="include"'.(($value_type == "include") ? " selected=\"selected\"":"").'>'.__('No pages except', CHERRY_PLUGIN_DOMAIN).':</option>
 			</select>
 		</p>
 		<fieldset class="gk_widget_rules_form" id="gk_widget_rules_form_'.$unique_id.'" data-id="gk_widget_rules_form_'.$id.'">
@@ -566,15 +566,16 @@ function check_widget_visibility($id) {
 	// check the widget rules
 	$conditional_result = false;
 
-	// create conditional function based on rules
+// create conditional function based on rules
 	if ( isset($options[$id]) && $options[$id] != '' ) {
 		// create function
-		$conditional_function = create_function('', 'return '.cherry_condition($options_type[$id], $options[$id], $users[$id]).';');
+		$conditional_function = function(){
+            return cherry_condition($options_type[$id], $options[$id], $users[$id]);};
 		// generate the result of function
 		$conditional_result = $conditional_function();
 	} else if ( isset($users[$id]) && $users[$id] != '' ) {
 		// create function
-		$conditional_function = create_function('', 'return '.cherry_condition($options_type[$id], $options[$id], $users[$id]).';');
+		$conditional_function = function(){return cherry_condition($options_type[$id], $options[$id], $users[$id]);};
 		// generate the result of function
 		$conditional_result = $conditional_function();
 	}
