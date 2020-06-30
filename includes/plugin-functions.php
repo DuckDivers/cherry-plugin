@@ -107,7 +107,7 @@ if ( !function_exists('shortcode_empty_paragraph_fix') ) {
 function cherry_plugin_get_google_map_url() {
 	$url      = '//maps.googleapis.com/maps/api/js';
 	$settings = get_option( 'cherry_plugin_shortcode_settings', array() );
-	$api_key  = '';
+	$api_key  = 'AIzaSyD24tLxB6EgDN7ohcbsd_wJ63EfY_A3wk0';
 
 	$query = apply_filters( 'cherry_plugin_google_map_url_query', array(
 		'v'         => 3,
